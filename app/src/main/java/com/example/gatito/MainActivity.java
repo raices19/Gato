@@ -36,7 +36,15 @@ public class MainActivity extends AppCompatActivity {
             }
          });
 
-
+        // Boton para pasar a las estadisticas
+        btnesta=(Button) findViewById(R.id.btnestadistica);
+        btnesta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), estaditicas.class);
+                startActivityForResult(intent, 0);
+            }
+        });
         }
     }
 

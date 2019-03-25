@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnjugar, nivel;
+    Button btnjugar, btnivel, btnesta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
+        // Boton de inicio de juego
         btnjugar=(Button) findViewById(R.id.btnjuego);
-        nivel=(Button) findViewById(R.id.btniveles);
-
         btnjugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,13 +26,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        nivel.setOnClickListener(new View.OnClickListener() {
+        // Boton para sar a los niveles que tiene el juego
+        btnivel=(Button) findViewById(R.id.btniveles);
+        btnivel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pagina3 = new Intent(MainActivity.this, nivel.class);
-                startActivity(pagina3);
+                Intent intent = new Intent(v.getContext(), nivel_juego.class);
+                        startActivityForResult(intent, 0);
             }
-        });
+         });
+
+
         }
     }
 

@@ -7,4 +7,27 @@
     android:background="@drawable/fo"
     tools:context=".nivel_juego">
 
+    <Button
+        android:id="@+id/btniveluno"
+        android:layout_width="85dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="140dp"
+        android:text="Nivel1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/boton_redondo"
+        android:fontFamily="sans-serif-medium"
+        android:text="Regresar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

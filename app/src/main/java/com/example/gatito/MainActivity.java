@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         // Boton de inicio de juego
-        btnjugar=(Button) findViewById(R.id.btnjuego);
+        btnjugar=(Button) findViewById(R.id.btnempezar);
         btnjugar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent pagina2 = new Intent(MainActivity.this, juego.class);
+                Intent pagina2 = new Intent(MainActivity.this, jugadores.class);
                 startActivity(pagina2);
             }
         });

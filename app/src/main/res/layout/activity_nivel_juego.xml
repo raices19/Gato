@@ -10,9 +10,9 @@
     <Button
         android:id="@+id/btniveluno"
         android:layout_width="85dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="140dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="152dp"
         android:text="Nivel1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,4 +30,5 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
